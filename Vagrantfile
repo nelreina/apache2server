@@ -13,7 +13,6 @@ Vagrant.configure(2) do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "ubuntu/trusty32"
-  config.vm.network "public_network"
   config.vm.network "private_network", ip: "111.111.11.10"
   config.vm.network "forwarded_port", guest: 80, host: 8080
 
